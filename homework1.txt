@@ -1,0 +1,125 @@
+Создана папка C:\Users\Admin\3D Objects\QA\homework
+
+1) Посмотреть где я
+pwd
+
+2) Создать папку
+mkdir new1
+
+3) Зайти в папку new1
+cd new1
+
+4) Создать 3 папки в папке new1
+mkdir new2 new3 new4
+
+5) Зайти в любую папку
+cd new2
+
+6) Создать 5 файлов
+touch 1.txt 2.txt 3.txt 4.json 5.json
+
+7) Создать 3 папки
+mkdir papka1 papka2 papka3
+
+8) Вывести список содержимого папки
+ls –la
+
+9) Открыть любой txt файл
+cat > 1.txt
+
+10) Написать что-то в файл
+Hello, 30 group
+I love QA
+Vadim Ksendzov is the best of the best!
+Goodbye!
+
+
+11) Сохранить и выйти
+Enter
+Ctrl + c
+
+12) Выйти из папки на уровень выше
+cd ..
+
+13) Переместить любые 2 файла, которые вы создали, в любую другую папку
+mv 4.json 5.json papka1
+
+14) Скопировать любые 2 файла, которые вы создали, в любую другую папку
+cp 2.txt 3.txt papka3
+
+15) Найти файл по имени
+find 2.txt 
+
+16) Посмотреть содержимое в реальном времени файла 1.txt, содержащий:
+Hello, 30 group
+I love QA
+Vadim Ksendzov is the best of the best!
+Goodbye!
+
+tail -f 1.txt
+
+17) Вывести несколько первых строк из текстового файла 1.txt, содержащий:
+Hello, 30 group
+I love QA
+Vadim Ksendzov is the best of the best!
+Goodbye!
+
+grep –n l 1.txt 
+ВЫВОД:
+1:Hello, 30 group
+2:I love QA
+ИЛИ
+tail -n 3 1.txt
+
+18) Вывести несколько последних строк из текстового файла 1.txt, содержащий:
+Hello, 30 group
+I love QA
+Vadim Ksendzov is the best of the best!
+Goodbye!
+
+grep -n d 1.txt
+ВЫВОД:
+3:Vadim Ksendzov is the best of the best!
+4:Goodbye!
+ИЛИ
+tail -n -4 1.txt
+
+19) Просмотреть содержимое длинного файла
+Дозаписываем информацию в файл 1.txt:
+cat >> 1.txt
+
+djfglkdjgkldfjglkdjglkdfjglfdkjg
+djgflkrejgtklejrkl
+dfjvkldvjflkjgklfdgj
+erutioeru
+dfnvkfldkgndlfkgdnflg
+rueiotuiertuier
+vkclxkvjlkxcjlxckvj
+eirpoiweporiwpor
+cvbjlkvcbjclkvbjcvlkbj
+Enter
+Ctrl+C
+
+less 1.txt
+q - выход из команды
+
+20) Вывести дату и время
+date + "%D %T" – время BST (летнее время)
+
+*
+1) Отправить http запрос на сервер
+curl "http://162.55.220.72:5005/get_method?name="Egor"&age=20"
+ИЛИ
+
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+Создать файла new1.sh
+cd new1
+mkdir new2 new3 new4
+cd new2
+touch 1.txt 2.txt 3.txt 4.json 5.json
+mkdir papka1 papka2 papka3
+ls –la
+mv 4.json 5.json papka1
+
+
+
