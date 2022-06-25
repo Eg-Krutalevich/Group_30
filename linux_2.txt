@@ -1,0 +1,127 @@
+1. Create folder dir_1
+mkdir dir_1
+
+2. Go to folder dir_1
+cd dir_1
+
+3. Create folder inner_dir_1
+mkdir inner_fir_1
+
+4. Show path
+pwd
+
+5. Create empty text file tf_1.txt
+touch tf_1.txt
+
+6. Create file tf_2.txt
+cat > tf_2.txt
+the first 1
+the second 2
+the third 3
+Ctrl + C
+
+7. Go to folder inner_dir_1
+cd inner_dir_1
+
+8. Create tf_3.txt
+cat > tf_3.txt
+123
+456
+789
+
+9. Add string "the second 2" in text file tf_3.txt
+cat > tf_3.txt
+the second 2
+
+10. Add string "the sec 2" in text file tf_3.txt
+cat >> tf_3.txt
+the sec 2
+
+11. Add string "the sec 3" in text file tf_3.txt
+cat > tf_2.txt
+the sec 3
+
+12. Add string "the SeCoNd 2" in text file tf_3.txt
+cat >> tf_3.txt
+the SeCoNd 2
+
+
+13.  Add string "seConD 2" in text file tf_2.txt
+cat >> tf_2.txt
+the seConD 2
+
+14. Adding 15 strings
+
+15. Adding 13 strings
+
+16. Show list all files in folder
+dir
+
+17. Exit from folder immer_dir_1
+cd ..
+
+18. Show information in file tf_3.txt to terminal:
+less tf_3.txt
+
+19. Find path to file tf_4.txt
+pwd
+/c/Users/Admin/3D Objects/QA/home2/dir_1/inner_dir_1
+
+20. Clean infromation in file tf_4.txt 
+vim tf_4.txt
+
+21. Find path to files, which have "tf" in name
+find -name "tf*"
+
+22. Find path to files, which have "tf" in name and letters in any register
+find -name "tf*" | find -iname "*"
+
+23. Find strings in files where there is combination of letters "sec" in current folder
+grep "sec" *.*
+
+24. Find strings in files where there is combination of letters "sec" in any register in current folder
+grep -i "sec" *.*
+
+25. Find strings in files where there is only combination of letters "sec" in current folder
+grep -w "sec" *.*
+
+26. Find strings in files where there is only combination of letters "sec" in any register in current folder
+grep -w -i "sec" *.*
+
+27. Find strings in files where there is combination of letters "second" in current folder
+grep "second" *.*
+
+28. Find strings in files where there is combination of letters "second" in any register in current folder
+grep -i "second" *.*
+
+29. Find srtings in files where there is combination of letters "second" in all folders bellow the level
+cd ..
+grep "second" *.*
+
+30. Find all strings in all files where there isn't comintation "second"
+grep -v "second" *.*
+
+31. Show 4 last strings any text file
+tail -n 4 tf_1.txt
+
+32. Show 4 first strings any text file
+head -n 4 tf_1.txt
+
+33. Create folder and text file with data
+mkdir new | touch new1.txt
+
+34. Move text files in amy folder which hava word "sec"
+mv *.txt new | grep sec
+
+35. Copy text files in amy folder which hava word "sec"
+cp *.txt new | grep sec
+
+36. Find strings which have "sec" in all text files, copy and paste these string in new create text file
+grep "sec" tf_2.txt >> new.txt
+
+37. Delete files which have word "sec"
+rm -r *.txt | grep sec
+
+38. Output in terminal string "Good job!!"
+echo 'Good job'
+
