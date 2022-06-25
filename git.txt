@@ -1,0 +1,30 @@
+1. Create folder homework2
+mkdir homework2
+
+2. Go to folder homework2
+cd homework2
+
+3. Initializtion repository JSON
+git init
+
+4. Create repository JSON
+
+5. Clone repository JSON
+git clone https://github.com/Eg-Krutalevich/JSON.git
+
+6. Create file new.json
+
+7. Add file to git
+git add new.json
+
+8. Commit new.json
+git commit -m "Create new file"
+
+9. Send file to external repository
+git push
+
+10. Redact file
+
+11. git push
+
+12. Create file preferences.json
