@@ -1,0 +1,49 @@
+1. Branches in local repository:
+git checkout -b Postman //лучше git branch Postman так как нужно тупо создать
+git checkout -b Jmeter
+git checkout -b CheckLists
+git checkout -b Bag Reports
+git checkout -b SQL
+git checkout -b Charles
+git checkout -b Mobile testing
+
+2. Push all branches
+git init
+git remote https://github.com/Eg-Krutalevich/QA.git
+git remote add origin https://github.com/Eg-Krutalevich/QA.git
+git push -f origin main
+git push -f origin SQL
+git push -f origin Jmeter
+git push -f origin MobileTesting
+git push -f origin Charles
+git push -f origin Checklists
+
+3. Create file
+
+4. Push file
+git checkout BagReports
+git init //только при создании репозитория не надо
+git commit -m "Creating Bag Report"
+git push --set-upstream origin BagReports
+
+5. Merge branch BagReports in main
+git checkout main
+git merge BagReports
+
+6. Push main in external repository
+git push --set-upstream origin master
+
+7. Create checklist.txt
+git checkout master
+cat > checklist.txt
+git init //только при создании репозитория не надо
+git add checklist.txt
+git commit -m "Creating checklist"
+
+8. Push checklist.txt
+git push origin master
+
+9. UI
+
+10. git pull
+
